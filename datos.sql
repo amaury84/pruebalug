@@ -1,4 +1,4 @@
-CREATE DATABASE CLIENTES;
+CREATE DATABASE if not exist CLIENTES;
 USE CLIENTES;
 select id_compra, Nombre, nombre_prod from compra INNER JOIN clientes, producto;
 CREATE TABLE clientes(Documento DOUBLE NOT NULL PRIMARY KEY, Nombre varchar(50) NOT NULL, celular DOUBLE NOT NULL);
